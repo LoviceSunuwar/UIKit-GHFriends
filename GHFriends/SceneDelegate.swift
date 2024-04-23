@@ -18,13 +18,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+//        let searchNC = UINavigationController(rootViewController: SearchVC()) // Did this initially before creating a funciton for oth of them
+//        let favouritesNC = UINavigationController(rootViewController: FavouritesListVC())
+        
+//        let tabbar = UITabBarController()
+//        tabbar.viewControllers = [searchNC, favouritesNC] // Did this intially before creating createTabBar function ## Refactoring
         window = UIWindow(frame: windowScene.coordinateSpace.bounds) // Full Screen
         window?.windowScene = windowScene
         // Root View Controller
-        window?.rootViewController = ViewController()
+        window?.rootViewController = createTabbar()
+//        window?.rootViewController = tabbar // Since our tab bar controller is going to hold navigation view controller which will hld the view controller Did this intially ebfore creating createTababr
         window?.makeKeyAndVisible() // show it
     }
+    
+    func createSearchNC() -> UINavigationController {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0) // tag means where its0 cause its first index we want on the tab bar controller
+        
+        return UINavigationController(rootViewController: searchVC)
+    }
 
+    func createFavouritesNC() -> UINavigationController {
+        let favouritesVC = FavouritesListVC()
+        favouritesVC.title = "Favourites"
+        favouritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        return UINavigationController(rootViewController: favouritesVC)
+    }
+    
+    func createTabbar() -> UITabBarController {
+        let tabbar = UITabBarController()
+        UITabBar.appearance().backgroundColor = .systemBackground
+        UITabBar.appearance().tintColor = .systemGreen
+        tabbar.viewControllers = [createSearchNC(), createFavouritesNC()]
+    
+        return tabbar
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

@@ -15,6 +15,10 @@
 		B21BBA342BCE04E400945906 /* GHFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA332BCE04E400945906 /* GHFriendsTests.swift */; };
 		B21BBA3E2BCE04E400945906 /* GHFriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA3D2BCE04E400945906 /* GHFriendsUITests.swift */; };
 		B21BBA402BCE04E400945906 /* GHFriendsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA3F2BCE04E400945906 /* GHFriendsUITestsLaunchTests.swift */; };
+		B21BBA4D2BCE0E9100945906 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA4C2BCE0E9100945906 /* SearchVC.swift */; };
+		B21BBA4F2BCE0EBF00945906 /* FavouritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA4E2BCE0EBF00945906 /* FavouritesListVC.swift */; };
+		B2B24F892BD0D67B00988F53 /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B24F882BD0D67B00988F53 /* GHButton.swift */; };
+		B2B24F8B2BD0DA0700988F53 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		B21BBA392BCE04E400945906 /* GHFriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHFriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21BBA3D2BCE04E400945906 /* GHFriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFriendsUITests.swift; sourceTree = "<group>"; };
 		B21BBA3F2BCE04E400945906 /* GHFriendsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFriendsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B21BBA4C2BCE0E9100945906 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		B21BBA4E2BCE0EBF00945906 /* FavouritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListVC.swift; sourceTree = "<group>"; };
+		B2B24F882BD0D67B00988F53 /* GHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHButton.swift; sourceTree = "<group>"; };
+		B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				B21BBA252BCE04E400945906 /* Assets.xcassets */,
 				B21BBA272BCE04E400945906 /* LaunchScreen.storyboard */,
 				B21BBA2A2BCE04E400945906 /* Info.plist */,
+				B21BBA4C2BCE0E9100945906 /* SearchVC.swift */,
+				B21BBA4E2BCE0EBF00945906 /* FavouritesListVC.swift */,
+				B2B24F882BD0D67B00988F53 /* GHButton.swift */,
+				B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */,
 			);
 			path = GHFriends;
 			sourceTree = "<group>";
@@ -254,8 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B24F892BD0D67B00988F53 /* GHButton.swift in Sources */,
+				B21BBA4D2BCE0E9100945906 /* SearchVC.swift in Sources */,
 				B21BBA212BCE04E200945906 /* ViewController.swift in Sources */,
+				B2B24F8B2BD0DA0700988F53 /* GHTextField.swift in Sources */,
 				B21BBA1D2BCE04E200945906 /* AppDelegate.swift in Sources */,
+				B21BBA4F2BCE0EBF00945906 /* FavouritesListVC.swift in Sources */,
 				B21BBA1F2BCE04E200945906 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
