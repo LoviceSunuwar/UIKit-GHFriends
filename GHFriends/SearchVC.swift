@@ -32,6 +32,11 @@ class SearchVC: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
+    func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing)) // end editing causes the view to resign the first responder, what view ? is going to act? right now the keyboard but other tap will end it.
+        
+    }
+    
     func configureLogoImageView() {
         // This is like you dragging a image view in storyboard
         // you have to do this on every one
