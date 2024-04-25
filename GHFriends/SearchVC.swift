@@ -13,12 +13,17 @@ class SearchVC: UIViewController {
     let usernameTextField = GHTextField()
     let callToActionButton =  GHButton(backgroundColor: .systemGreen, title: "Get Followers")
     
+    var isUsernameEntered: Bool {
+        return !usernameTextField.text!.isEmpty // returns false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configureLogoImageView()
         configureTextField()
         configureSearchButton()
+        createDismissKeyboardTapGesture()
         
     }
     
@@ -33,8 +38,23 @@ class SearchVC: UIViewController {
     }
     
     func createDismissKeyboardTapGesture() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing)) // end editing causes the view to resign the first responder, what view ? is going to act? right now the keyboard but other tap will end it.
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing)) // end editing causes the view to resign the first responder, what view ? is going to act? right now the keyboard but other tap will end it.
+        view.addGestureRecognizer(tap)
         
+    }
+    
+    // anytime you create a function for #selector it has to be an objective c funciton/ since its a remanent of objective c
+    
+    @objc func pushFollowerListVC() {
+        // putitng in guard saying hey, if there is valuye then go ahead and do rest
+        guard isUsernameEntered else {
+            print("No userName")
+             return
+        }
+        let followerListVC = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title = usernameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
     }
     
     func configureLogoImageView() {
@@ -57,7 +77,8 @@ class SearchVC: UIViewController {
     
     func configureTextField() {
         view.addSubview(usernameTextField)
-        
+        // setting the delagate to listen to
+        usernameTextField.delegate = self // self is the SearchVC viewcontroller
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
             usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50), // pining to the edges
@@ -69,6 +90,10 @@ class SearchVC: UIViewController {
     
     func configureSearchButton() {
         view.addSubview(callToActionButton)
+        
+        callToActionButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
+        // for is like the differnt types of taps you can do in a button.
+        
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50), // trialing andbottom you have to keep it on negative
             callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
@@ -80,4 +105,15 @@ class SearchVC: UIViewController {
     
     
     
+}
+
+
+extension SearchVC: UITextFieldDelegate {
+    // Delegate listens,listen who ? listen vc
+    // first define the vc or set up
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowerListVC()
+        return true
+    }
 }

@@ -29,6 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = createTabbar()
 //        window?.rootViewController = tabbar // Since our tab bar controller is going to hold navigation view controller which will hld the view controller Did this intially ebfore creating createTababr
         window?.makeKeyAndVisible() // show it
+        
+        configureNavigationBar()
     }
     
     func createSearchNC() -> UINavigationController {
@@ -54,6 +56,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabbar.viewControllers = [createSearchNC(), createFavouritesNC()]
     
         return tabbar
+    }
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

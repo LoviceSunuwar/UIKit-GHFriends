@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B205B0C62BDA0F2E00181526 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */; };
 		B21BBA1D2BCE04E200945906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA1C2BCE04E200945906 /* AppDelegate.swift */; };
 		B21BBA1F2BCE04E200945906 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA1E2BCE04E200945906 /* SceneDelegate.swift */; };
 		B21BBA212BCE04E200945906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA202BCE04E200945906 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		B21BBA192BCE04E200945906 /* GHFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21BBA1C2BCE04E200945906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B21BBA1E2BCE04E200945906 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				B21BBA4E2BCE0EBF00945906 /* FavouritesListVC.swift */,
 				B2B24F882BD0D67B00988F53 /* GHButton.swift */,
 				B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */,
+				B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */,
 			);
 			path = GHFriends;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				B2B24F8B2BD0DA0700988F53 /* GHTextField.swift in Sources */,
 				B21BBA1D2BCE04E200945906 /* AppDelegate.swift in Sources */,
 				B21BBA4F2BCE0EBF00945906 /* FavouritesListVC.swift in Sources */,
+				B205B0C62BDA0F2E00181526 /* FollowerListVC.swift in Sources */,
 				B21BBA1F2BCE04E200945906 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

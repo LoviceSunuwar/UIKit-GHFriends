@@ -37,5 +37,7 @@ class GHTextField: UITextField {
         
         placeholder                 = "Enter a Username"
         
+        returnKeyType               = .go
+//        keyboardType =  here to check what options we have
     }
 }
