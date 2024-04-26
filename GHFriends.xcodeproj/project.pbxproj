@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B205B0C62BDA0F2E00181526 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */; };
+		B205B0C92BDB5F1E00181526 /* GHTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0C82BDB5F1E00181526 /* GHTitleLabel.swift */; };
+		B205B0CB2BDB602700181526 /* GHBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0CA2BDB602700181526 /* GHBodyLabel.swift */; };
+		B205B0CD2BDB60D300181526 /* GHAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0CC2BDB60D300181526 /* GHAlertVC.swift */; };
+		B205B0CF2BDB663100181526 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B205B0CE2BDB663100181526 /* UIViewController+Ext.swift */; };
 		B21BBA1D2BCE04E200945906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA1C2BCE04E200945906 /* AppDelegate.swift */; };
 		B21BBA1F2BCE04E200945906 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA1E2BCE04E200945906 /* SceneDelegate.swift */; };
 		B21BBA212BCE04E200945906 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA202BCE04E200945906 /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		B205B0C82BDB5F1E00181526 /* GHTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTitleLabel.swift; sourceTree = "<group>"; };
+		B205B0CA2BDB602700181526 /* GHBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHBodyLabel.swift; sourceTree = "<group>"; };
+		B205B0CC2BDB60D300181526 /* GHAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAlertVC.swift; sourceTree = "<group>"; };
+		B205B0CE2BDB663100181526 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		B21BBA192BCE04E200945906 /* GHFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21BBA1C2BCE04E200945906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B21BBA1E2BCE04E200945906 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +126,10 @@
 				B2B24F882BD0D67B00988F53 /* GHButton.swift */,
 				B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */,
 				B205B0C52BDA0F2E00181526 /* FollowerListVC.swift */,
+				B205B0C82BDB5F1E00181526 /* GHTitleLabel.swift */,
+				B205B0CA2BDB602700181526 /* GHBodyLabel.swift */,
+				B205B0CC2BDB60D300181526 /* GHAlertVC.swift */,
+				B205B0CE2BDB663100181526 /* UIViewController+Ext.swift */,
 			);
 			path = GHFriends;
 			sourceTree = "<group>";
@@ -269,14 +281,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B205B0C92BDB5F1E00181526 /* GHTitleLabel.swift in Sources */,
 				B2B24F892BD0D67B00988F53 /* GHButton.swift in Sources */,
+				B205B0CF2BDB663100181526 /* UIViewController+Ext.swift in Sources */,
 				B21BBA4D2BCE0E9100945906 /* SearchVC.swift in Sources */,
 				B21BBA212BCE04E200945906 /* ViewController.swift in Sources */,
 				B2B24F8B2BD0DA0700988F53 /* GHTextField.swift in Sources */,
 				B21BBA1D2BCE04E200945906 /* AppDelegate.swift in Sources */,
+				B205B0CD2BDB60D300181526 /* GHAlertVC.swift in Sources */,
 				B21BBA4F2BCE0EBF00945906 /* FavouritesListVC.swift in Sources */,
 				B205B0C62BDA0F2E00181526 /* FollowerListVC.swift in Sources */,
 				B21BBA1F2BCE04E200945906 /* SceneDelegate.swift in Sources */,
+				B205B0CB2BDB602700181526 /* GHBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
