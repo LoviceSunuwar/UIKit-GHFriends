@@ -1,0 +1,15 @@
+{
+  "originHash" : "fd40c524583b43b35f11a3379be22de900e7d279a85362125cf3fd080ad3e3a1",
+  "pins" : [
+    {
+      "identity" : "screenguard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LoviceSunuwar/screenGuard",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c6af1d8974eb156d3009d97a6d9fafa6e9121feb"
+      }
+    }
+  ],
+  "version" : 3
+}

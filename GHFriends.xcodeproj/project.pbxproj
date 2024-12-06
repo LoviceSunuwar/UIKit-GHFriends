@@ -22,8 +22,10 @@
 		B21BBA402BCE04E400945906 /* GHFriendsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA3F2BCE04E400945906 /* GHFriendsUITestsLaunchTests.swift */; };
 		B21BBA4D2BCE0E9100945906 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA4C2BCE0E9100945906 /* SearchVC.swift */; };
 		B21BBA4F2BCE0EBF00945906 /* FavouritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BBA4E2BCE0EBF00945906 /* FavouritesListVC.swift */; };
+		B2A2F42B2D0006A300BE166D /* ScreenGuard in Frameworks */ = {isa = PBXBuildFile; productRef = B2A2F42A2D0006A300BE166D /* ScreenGuard */; };
 		B2B24F892BD0D67B00988F53 /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B24F882BD0D67B00988F53 /* GHButton.swift */; };
 		B2B24F8B2BD0DA0700988F53 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B24F8A2BD0DA0700988F53 /* GHTextField.swift */; };
+		B2E6C0442D028D2B00D5AEC0 /* ScreenGuard in Frameworks */ = {isa = PBXBuildFile; productRef = B2E6C0432D028D2B00D5AEC0 /* ScreenGuard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E6C0442D028D2B00D5AEC0 /* ScreenGuard in Frameworks */,
+				B2A2F42B2D0006A300BE166D /* ScreenGuard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,9 @@
 				Base,
 			);
 			mainGroup = B21BBA102BCE04E200945906;
+			packageReferences = (
+				B2A2F4292D0006A300BE166D /* XCRemoteSwiftPackageReference "screenGuard" */,
+			);
 			productRefGroup = B21BBA1A2BCE04E200945906 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -657,6 +664,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2A2F4292D0006A300BE166D /* XCRemoteSwiftPackageReference "screenGuard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LoviceSunuwar/screenGuard";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2A2F42A2D0006A300BE166D /* ScreenGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A2F4292D0006A300BE166D /* XCRemoteSwiftPackageReference "screenGuard" */;
+			productName = ScreenGuard;
+		};
+		B2E6C0432D028D2B00D5AEC0 /* ScreenGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2A2F4292D0006A300BE166D /* XCRemoteSwiftPackageReference "screenGuard" */;
+			productName = ScreenGuard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B21BBA112BCE04E200945906 /* Project object */;
 }
